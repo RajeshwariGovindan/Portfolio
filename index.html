@@ -8,7 +8,7 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- Font Awesome Icons -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -42,7 +42,6 @@ nav a {
     color: #e2e8f0;
     margin-left: 20px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 nav a:hover {
@@ -62,17 +61,26 @@ nav a:hover {
 
 .hero p {
     margin: 20px 0;
-    font-size: 18px;
 }
 
 .btn {
     padding: 12px 25px;
     background: #38bdf8;
     color: #0f172a;
-    border: none;
     border-radius: 8px;
-    cursor: pointer;
     text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Resume button */
+.resume-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.resume-btn:hover {
+    background: #16a34a;
 }
 
 /* Sections */
@@ -85,7 +93,17 @@ h2 {
     color: #38bdf8;
 }
 
-/* Cards */
+/* Skills */
+.skill {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Projects */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -103,16 +121,6 @@ h2 {
     transform: translateY(-5px);
 }
 
-/* Skills */
-.skill {
-    background: #38bdf8;
-    color: #0f172a;
-    padding: 8px 12px;
-    border-radius: 6px;
-    display: inline-block;
-    margin: 5px;
-}
-
 /* Icon Buttons */
 .icon-btn {
     display: inline-block;
@@ -122,8 +130,6 @@ h2 {
     background: #1e293b;
     color: #e2e8f0;
     text-decoration: none;
-    transition: 0.3s;
-    font-size: 16px;
 }
 
 .icon-btn i {
@@ -133,7 +139,6 @@ h2 {
 .icon-btn:hover {
     background: #38bdf8;
     color: #0f172a;
-    transform: translateY(-3px);
 }
 
 /* Footer */
@@ -143,7 +148,6 @@ footer {
     background: #020617;
 }
 </style>
-
 </head>
 
 <body>
@@ -156,6 +160,7 @@ footer {
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="Rajeshwari_Resume.pdf" download>Resume</a>
     </div>
 </nav>
 
@@ -163,7 +168,12 @@ footer {
 <div class="hero">
     <h1>Hi, I'm Rajeshwari 👩‍💻</h1>
     <p>Java Full Stack Developer | Spring Boot | Angular</p>
+
     <a href="#contact" class="btn">Contact Me</a>
+
+    <a href="Rajeshwari_Resume.pdf" download class="btn resume-btn">
+        <i class="fas fa-download"></i> Download Resume
+    </a>
 </div>
 
 <!-- About -->
@@ -178,15 +188,13 @@ footer {
 <!-- Skills -->
 <section id="skills">
     <h2>Skills</h2>
-    <div>
-        <span class="skill">Java</span>
-        <span class="skill">Spring Boot</span>
-        <span class="skill">Angular</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Microservices</span>
-        <span class="skill">AWS</span>
-        <span class="skill">Git</span>
-    </div>
+    <span class="skill">Java</span>
+    <span class="skill">Spring Boot</span>
+    <span class="skill">Angular</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Microservices</span>
+    <span class="skill">AWS</span>
+    <span class="skill">Git</span>
 </section>
 
 <!-- Projects -->
@@ -194,24 +202,24 @@ footer {
     <h2>Projects</h2>
     <div class="grid">
 
-        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none; color:inherit;">
+        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none;color:inherit;">
             <div class="card">
                 <h3>College Admission Portal</h3>
-                <p>Full-stack application with authentication and admin dashboard.</p>
+                <p>Full-stack app with authentication and admin dashboard.</p>
             </div>
         </a>
 
-        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none; color:inherit;">
+        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none;color:inherit;">
             <div class="card">
                 <h3>Voice Email Assistant</h3>
-                <p>Speech-to-text email automation using Python.</p>
+                <p>Speech-to-text email automation system.</p>
             </div>
         </a>
 
-        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none; color:inherit;">
+        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none;color:inherit;">
             <div class="card">
                 <h3>Bus Reservation System</h3>
-                <p>Backend system for booking and seat allocation.</p>
+                <p>Backend booking and seat allocation system.</p>
             </div>
         </a>
 
@@ -230,7 +238,7 @@ footer {
         <i class="fab fa-github"></i> GitHub
     </a>
 
-    <a href="https://www.linkedin.com/in/rajeshwari-g-8b499522x/" target="_blank" class="icon-btn">
+    <a href="https://linkedin.com/in/rajeshwari-g-8b4995220" target="_blank" class="icon-btn">
         <i class="fab fa-linkedin"></i> LinkedIn
     </a>
 
