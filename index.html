@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajeshwari G | Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(15,23,42,0.9);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: #e2e8f0;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #38bdf8;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+/* Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skill {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Icon Buttons */
+.icon-btn {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: #1e293b;
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.icon-btn i {
+    margin-right: 8px;
+}
+
+.icon-btn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Rajeshwari</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>Hi, I'm Rajeshwari 👩‍💻</h1>
+    <p>Java Full Stack Developer | Spring Boot | Angular</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Software Engineer experienced in building scalable applications using Spring Boot and Angular.
+        Skilled in REST APIs, microservices, debugging, and performance optimization.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div>
+        <span class="skill">Java</span>
+        <span class="skill">Spring Boot</span>
+        <span class="skill">Angular</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Microservices</span>
+        <span class="skill">AWS</span>
+        <span class="skill">Git</span>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+
+        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none; color:inherit;">
+            <div class="card">
+                <h3>College Admission Portal</h3>
+                <p>Full-stack application with authentication and admin dashboard.</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none; color:inherit;">
+            <div class="card">
+                <h3>Voice Email Assistant</h3>
+                <p>Speech-to-text email automation using Python.</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/RajeshwariGovindan" target="_blank" style="text-decoration:none; color:inherit;">
+            <div class="card">
+                <h3>Bus Reservation System</h3>
+                <p>Backend system for booking and seat allocation.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <a href="mailto:rajeshwarigv2001@gmail.com" class="icon-btn">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+
+    <a href="https://github.com/RajeshwariGovindan" target="_blank" class="icon-btn">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/rajeshwari-g-8b499522x/" target="_blank" class="icon-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Rajeshwari G</p>
+</footer>
+
+</body>
+</html>
